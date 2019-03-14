@@ -6,6 +6,8 @@ This is an extension plugin for the Redirect plugin for OctoberCMS.
 
 ### `IpAddressCondition`
 
+Exclude certain IP addresses from the Redirect matching algorithm.
+
 ## Requirements
 
 - Plugin Vdlp.Redirect
