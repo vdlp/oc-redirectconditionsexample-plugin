@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Vdlp\Redirect\Extensions\Conditions\Example\Tests;
+namespace Vdlp\RedirectConditionsExample\Tests;
 
 use PluginTestCase;
-use Vdlp\Redirect\Extensions\Conditions\Example\Classes\IpAddressCondition;
 use Vdlp\RedirectConditions\Models\ConditionParameter;
 use Vdlp\RedirectConditions\Tests\Factories\RedirectRuleFactory;
+use Vdlp\RedirectConditionsExample\Classes\IpAddressCondition;
 
 /**
  * Class IpAddressConditionTest
  *
- * @package Vdlp\RedirectConditions\Tests
+ * @package Vdlp\RedirectConditionsExample\Tests
  */
 class IpAddressConditionTest extends PluginTestCase
 {

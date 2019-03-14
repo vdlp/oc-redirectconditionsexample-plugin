@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Vdlp\Redirect\Extensions\Conditions\Example;
+namespace Vdlp\RedirectConditionsExample;
 
 use System\Classes\PluginBase;
 use Vdlp\Redirect\Classes\Contracts\RedirectManagerInterface;
-use Vdlp\Redirect\Extensions\Conditions\Example\Classes\IpAddressCondition;
+use Vdlp\RedirectConditionsExample\Classes\IpAddressCondition;
 
 /**
  * Class Plugin
  *
- * @package Vdlp\RedirectConditionUserAgent
+ * @package Vdlp\RedirectConditionsExample
  */
 class Plugin extends PluginBase
 {
@@ -35,7 +35,7 @@ class Plugin extends PluginBase
             'description' => 'A Redirect Condition implementation example plugin.',
             'author' => 'Van der Let & Partners',
             'icon' => 'icon-link',
-            'homepage' => 'https://octobercms.com/plugin/vdlp-redirect',
+            'homepage' => 'https://github.com/vdlp/oc-redirectconditionsexample-plugin',
         ];
     }
 

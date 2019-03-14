@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vdlp\Redirect\Extensions\Conditions\Example\Classes;
+namespace Vdlp\RedirectConditionsExample\Classes;
 
 use Illuminate\Http\Request;
 use Vdlp\Redirect\Classes\RedirectRule;
@@ -11,7 +11,7 @@ use Vdlp\RedirectConditions\Classes\Condition;
 /**
  * Class IpAddressCondition
  *
- * @package Vdlp\RedirectConditions\Conditions
+ * @package Vdlp\RedirectConditionsExample\Classes
  */
 class IpAddressCondition extends Condition
 {
