@@ -1,0 +1,15 @@
+{
+    "name": "vdlp/oc-redirectconditionsexample-plugin",
+    "description": "A Redirect Condition implementation example plugin.",
+    "type": "october-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Van der Let & Partners",
+            "email": "octobercms@vdlp.nl"
+        }
+    ],
+    "require": {
+        "piwik/device-detector": "^3.11"
+    }
+}

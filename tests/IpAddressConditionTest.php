@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Vdlp\Redirect\Extensions\Conditions\Example\Tests;
+
+use PluginTestCase;
+use Vdlp\Redirect\Extensions\Conditions\Example\Classes\IpAddressCondition;
+use Vdlp\RedirectConditions\Models\ConditionParameter;
+use Vdlp\RedirectConditions\Tests\Factories\RedirectRuleFactory;
+
+/**
+ * Class IpAddressConditionTest
+ *
+ * @package Vdlp\RedirectConditions\Tests
+ */
+class IpAddressConditionTest extends PluginTestCase
+{
+    /**
+     * @throws \PHPUnit_Framework_AssertionFailedError
+     */
+    public function testLocalhost()
+    {
+        /** @var IpAddressCondition $condition */
+        $condition = resolve(IpAddressCondition::class);
+
+        ConditionParameter::create([
+            'redirect_id' => 1,
+            'condition_code' => $condition->getCode(),
+            'is_enabled' => date('Y-m-d H:i:s'),
+            'parameters' => [
+                'ip_addresses' => [
+                    '127.0.0.1',
+                ]
+            ]
+        ]);
+
+        $rule = RedirectRuleFactory::createRedirectRule();
+
+        self::assertTrue($condition->passes($rule, '/from/url'));
+    }
+}
