@@ -10,6 +10,8 @@
         }
     ],
     "require": {
-        "piwik/device-detector": "^3.11"
+        "php": "^7.1||^8.0",
+        "piwik/device-detector": "^3.11",
+        "composer/installers": "^1.0"
     }
 }
