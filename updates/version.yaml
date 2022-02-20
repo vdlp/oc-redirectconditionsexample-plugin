@@ -1,4 +1,6 @@
-1.0.0:
+v1.0.0:
     - First version of Vdlp.RedirectConditionsExample
-1.0.1:
+v1.0.1:
     - Update plugin dependencies
+v1.1.0:
+    - Maintenance update

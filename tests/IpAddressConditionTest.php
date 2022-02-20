@@ -9,17 +9,12 @@ use Vdlp\RedirectConditions\Models\ConditionParameter;
 use Vdlp\RedirectConditions\Tests\Factories\RedirectRuleFactory;
 use Vdlp\RedirectConditionsExample\Classes\IpAddressCondition;
 
-/**
- * Class IpAddressConditionTest
- *
- * @package Vdlp\RedirectConditionsExample\Tests
- */
 class IpAddressConditionTest extends PluginTestCase
 {
     /**
      * @throws \PHPUnit_Framework_AssertionFailedError
      */
-    public function testLocalhost()
+    public function testLocalhost(): void
     {
         /** @var IpAddressCondition $condition */
         $condition = resolve(IpAddressCondition::class);
@@ -31,8 +26,8 @@ class IpAddressConditionTest extends PluginTestCase
             'parameters' => [
                 'ip_addresses' => [
                     '127.0.0.1',
-                ]
-            ]
+                ],
+            ],
         ]);
 
         $rule = RedirectRuleFactory::createRedirectRule();
