@@ -6,3 +6,5 @@ v1.1.0:
     - Maintenance update
 v1.2.0:
     - Maintenance update
+v1.3.0:
+    - Add support for October CMS 4.x. Drop support for October CMS 3.x.
