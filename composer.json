@@ -13,7 +13,7 @@
         "php": "^8.2.0",
         "composer/installers": "^1.0 || ^2.0",
         "october/rain": "^4.0",
-        "piwik/device-detector": "^3.11",
+        "matomo/device-detector": "^6.0",
         "vdlp/oc-redirectconditions-plugin": "^1.4"
     },
     "require-dev": {
