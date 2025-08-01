@@ -10,11 +10,14 @@
         }
     ],
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.2.0",
         "composer/installers": "^1.0 || ^2.0",
-        "october/system": "^3.0",
-        "piwik/device-detector": "^3.11",
-        "vdlp/oc-redirectconditions-plugin": "^1.3"
+        "october/rain": "^4.0",
+        "matomo/device-detector": "^6.0",
+        "vdlp/oc-redirectconditions-plugin": "^1.4"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.42"
     },
     "repositories": [
         {
@@ -22,13 +25,10 @@
             "url": "https://gateway.octobercms.com"
         }
     ],
-    "archive": {
-        "exclude": [
-            ".gitattributes",
-            ".github",
-            ".gitignore",
-            "tests",
-            "phpunit.xml"
-        ]
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "ergebnis/composer-normalize": true
+        }
     }
 }
